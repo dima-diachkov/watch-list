@@ -1,0 +1,9 @@
+#root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 10vh;
+}
+
+footer {
+    margin-top: auto;
+}
