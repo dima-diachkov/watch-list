@@ -6,9 +6,12 @@ import { CardContainer } from './components/CardContainer';
 function App() {
   return (
     <>
-      <NavBar />
-      <CardContainer />
-      <Footer />
+      <Provider store={store}>
+        <NavBar />
+        <CardContainer />
+        <Footer />
+      </Provider>
+
     </>
 
   );
