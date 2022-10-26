@@ -1,1 +1,1 @@
-export * from "./RaitingLabel";
+export * from './RaitingLabel';

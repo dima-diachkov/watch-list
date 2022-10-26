@@ -1,1 +1,1 @@
-export * from "./GridCard";
+export * from './GridCard';
