@@ -1,3 +1,3 @@
 # watch-list
 
-This is watch list shows films
+This is watch list shows movies
