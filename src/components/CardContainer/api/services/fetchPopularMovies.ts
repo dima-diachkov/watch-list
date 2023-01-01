@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { Card } from "../../types/CardTypes";
+import { Card } from "../../types/Card";
 import { Endpoints } from "../constants/endpoints";
 import { cardActionTypes } from "../constants/cardActionTypes";
 
