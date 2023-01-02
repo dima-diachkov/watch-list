@@ -6,8 +6,8 @@ import { fetchPopularMovies } from "./api/services/fetchPopularMovies";
 import { Endpoints } from "./api/constants/endpoints";
 import { Card, InitialCardsState } from "./types/CardTypes";
 import { AppDispatch, RootState } from "../../store";
-import { ErrorMessage } from "../../shared/ErrorMessage";
 import { Loader } from "../../shared/Loader";
+import { ErrorMessage } from "../../shared/ErrorMessage/ErrorMessage";
 
 export const CardContainer = () => {
 
