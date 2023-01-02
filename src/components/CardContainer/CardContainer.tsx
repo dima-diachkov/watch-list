@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchPopularMovies } from "./api/services/fetchPopularMovies";
 import { Endpoints } from "./api/constants/endpoints";
 import { Card, InitialCardsState } from "./types/CardTypes";
-import { AppDispatch, RootState } from "../../store";
 import { Loader } from "../../shared/Loader";
 import { ErrorMessage } from "../../shared/ErrorMessage/ErrorMessage";
+import { AppDispatch, RootState } from "../../store/store";
 
 export const CardContainer = () => {
 
