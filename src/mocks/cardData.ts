@@ -1,6 +1,6 @@
-import { Card } from '../components/CardContainer/types/CardTypes';
+import { TrailerCard } from '../components/CardContainer/types/CardTypes';
 
-export const cardData: Array<Card> = [
+export const cardData: Array<TrailerCard> = [
   {
     id: 1,
     poster_path:

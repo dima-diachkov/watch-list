@@ -8,6 +8,11 @@ export interface Card {
     "vote_average": number;
 };
 
+export interface TrailerCard extends Card {
+    "backdrop_path": string;
+    "key": string;
+};
+
 export interface InitialCardsState {
     cards: Array<Card>,
     status: boolean,

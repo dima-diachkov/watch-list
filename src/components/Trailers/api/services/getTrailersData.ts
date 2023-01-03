@@ -1,3 +1,3 @@
-import { Card } from '../../../CardContainer/types/CardTypes';
+import { TrailerCard } from '../../../CardContainer/types/CardTypes';
 
-export const getTrailersData = (data: Array<Card>) => data.slice(0, 4);
+export const getTrailersData = (data: Array<TrailerCard>) => data.slice(0, 4);
