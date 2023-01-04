@@ -40,7 +40,7 @@ export const FilmCard = ({ image, name, date, rating }: Props) => (
         padding={1}
         sx={{ mt: 0, position: 'absolute', top: 195 }}
       >
-        <RatingLabel filmRating={rating} />
+        <RatingLabel filmRating={rating*10} />
       </Grid>
     </CardActionArea>
     <CardInfoSection name={name} date={date} />
