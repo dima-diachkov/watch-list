@@ -27,7 +27,7 @@ export const CardContainer = () => {
       ? <Box sx={{ mx: "auto", mt: 15, maxWidth: 1200, flexGrow: 1 }}>
           <Grid justifyContent="space-around" container>
             {cardSliceData.cards.slice(0,18).map((card: Card) => (
-              <Grid item xs={6} sm={4} md={3} lg={2} key={card["id"]}>
+              <Grid item xs={6} sm={4} md={3} lg={2} key={card["id"]} sx={{mb: 5}}>
                 <FilmCard
                   image={`${Endpoints.PHOTO_W220_H330}${card["poster_path"]}`}
                   name={card["original_title"]}
