@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Container, Grid } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import { VideoCard } from './VideoCard/VideoCard';
 import { getTrailersData } from '../api/services/getTrailersData';
 import { cardData } from '../../../mocks/cardData';
