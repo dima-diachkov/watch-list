@@ -2,6 +2,9 @@ name: Main workflow
 
 on: push
 
+env: 
+   REACT_APP_MOVIEDB_API_KEY: ${{ secrets.REACT_APP_MOVIEDB_API_KEY }}
+
 jobs:
  eslint:
    name: ESLint
