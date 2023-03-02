@@ -38,11 +38,13 @@ jobs:
         run: yarn test
  deploy:
    name: Deploy
+   environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
    runs-on: ubuntu-latest
    needs: test
    if: github.ref == 'refs/heads/main'
-
    steps:
-      - uses: actions/checkout@v3
-      - name: Deploy react app to github pages
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v1
