@@ -46,9 +46,26 @@ jobs:
       - uses: actions/checkout@v3
       - name: Deploy react app to github pages
         run : npm i
-              npm ci
-              npm run build
-              git config user.name github-actions
-              git --work-tree build add --all
-              git commit -m "Automatic Deploy action run by github-actions"
-              git push origin HEAD:gh-pages --force
+      - name: Install modules
+        shell: bash
+        run : npm ci
+      - name: Install modules
+        shell: bash
+        run : npm run build
+      - name: Install modules
+        shell: bash
+        run : git config user.name github-actions
+      - name: Install modules
+        shell: bash
+        run : git config user.email github-actions@github.com
+      - name: Install modules
+        shell: bash
+        run : git --work-tree build add --all
+      - name: Install modules
+        shell: bash
+        run : git commit -m "Automatic Deploy action run by github-actions"
+      - name: Install modules
+        shell: bash
+        run : git push origin HEAD:gh-pages --force
+      - name: Install modules
+        shell: bash
