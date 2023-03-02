@@ -44,24 +44,24 @@ jobs:
 
    steps:
       - uses: actions/checkout@v3
-      - name: Deploy react app to github pages
+      - name: Install modules
         run : yarn install --frozen-lockfile
         shell: bash
-      - name: Install modules
+      - name: Build
         run : yarn build
         shell: bash
-      - name: Install modules
+      - name: Config user name
         run : git config user.name github-actions
         shell: bash
-      - name: Install modules
+      - name: Config user email
         run : git config user.email github-actions@github.com
         shell: bash
-      - name: Install modules
+      - name: Unload build
         run : git --work-tree build add --all
         shell: bash
-      - name: Install modules
+      - name: Commit
         run : git commit -m "Automatic Deploy action run by github-actions"
         shell: bash
-      - name: Install modules
+      - name: Push to github pages
         run : git push origin HEAD:gh-pages --force
         shell: bash
